@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>Your recommendation</title>
+    <style>
+        .mt-6 {
+            margin-top: 7.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar" style="background-color:#2f88fc;">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">
+                <span class="h4">MOODMENU</span>
+            </a>
+            <button 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center align-items-center" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="margin-right: 50px;">
+                    <li class="nav-item active mr-5">
+                        <a href="#" class="nav-link h4">Home</a>
+                    </li>
+                    <li class="nav-item active mr-5">
+                        <a href="#" class="nav-link h4">About</a>
+                    </li>
+                    <li class="nav-item active mr-5">
+                        <a href="#" class="nav-link h4">Features</a>
+                    </li>
+                    <li class="nav-item active mr-5">
+                        <a href="#" class="nav-link h4">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content container text-left mt-4 mb-4">
+        <div class="row align-items-start">
+            <div class="container mt-4 mr-5 col">
+                <h1 id="dishName">{{ dish_title }}</h1>
+                <img class="img-fluid mt-3" src="{{ url_for('static', filename='food_images/' + dish_title + '.jpg') }}" alt="recommended dish"/>
+            </div>
+        
+            <div class="container mt-4 ml-4 col">
+                <h1 class="mb-4">You are feeling <span id="emotion" style="color:#2f88fc; text-transform: uppercase;">{{ emotion }}.</span><br>Here's what you can try.</h1>
+                <h3 id="resultSection">
+                    <ul id="infoList">
+                            {% for item in info_list %}
+                                <li>{{ item }}.</li>
+                            {% endfor %}
+                    </ul>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
