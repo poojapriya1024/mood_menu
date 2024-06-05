@@ -108,7 +108,7 @@ def connect_to_db():
     my_db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="root@123",
+        password="*****",
         port=3306,
         database="my_schema"
     )
