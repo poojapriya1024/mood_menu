@@ -22,7 +22,7 @@ MoodMenu is a web application that recommends dishes based on the user's current
 1. **Clone the repository:**
     ```sh
     git clone https://github.com/poojapriya1024/mood_menu.git
-    cd moodmenu
+    cd mood_menu
     ```
 
 2. **Set up the virtual environment:**
