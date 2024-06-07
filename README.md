@@ -1,6 +1,6 @@
 # MoodMenu
 
-MoodMenu is a web application that recommends dishes based on the user's current emotion detected from their facial expressions. This project leverages deep learning models for emotion recognition and connects to a database to provide personalized food recommendations.
+MoodMenu is a web application that recommends dishes based on the user's current emotion detected from their facial expressions. This project leverages deep learning models for emotion recognition and connects to a database to provide personalized food recommendations. It helps in improving the user's emotional well-being. 
 
 ## Features
 
@@ -42,7 +42,7 @@ MoodMenu is a web application that recommends dishes based on the user's current
     - Import the schema provided in `my_schema.sql`.
 
 5. **Configure database connection:**
-    - Update the `connect_to_db` function in `app.py` with your MySQL credentials.
+    - Update the `connect_to_db` function in `main.py` with your MySQL credentials.
 
 6. **Run the application:**
     ```sh
