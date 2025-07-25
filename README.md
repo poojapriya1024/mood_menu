@@ -61,3 +61,6 @@ MoodMenu is a web application that recommends dishes based on the user's current
 3. **Get recommendations:**
     - Click on "Analyze Image" to detect emotions.
     - Click on "Get Recommendations" to view the recommended dish.
+
+Check out the demo here: [![Watch MoodMenu Demo](https://img.shields.io/badge/▶️%20Watch%20Demo%20Video-blue?style=for-the-badge)](https://drive.google.com/file/d/1AiJSW2MQ7MPA_mFOCLTXZULD6oSipu12/view?usp=sharing)
+
